@@ -1,0 +1,36 @@
+nom de fichier :Torres.pdf convertis a txt
+titre :
+Abstract : €”We
+evaluation 
+
+a new content-based method for 
+systems without 
+the 
+human models which is used to produce system rankings. 
+The research is carried out using a new content-based 
+evaluation framework called FRESA to compute a variety of 
+divergences among probability distributions. We apply our 
+comparison framework to various well-established content-based 
+evaluation measures in text summarization such as COVERAGE, 
+their 
+RESPONSIVENESS, PYRAMIDS 
+associations 
+text 
+including 
+generic multi-document summarization in English and French, 
+focus-based multi-document 
+summarization in English and 
+generic single-document summarization in French and Spanish. 
+Index Termsâ€”Text summarization evaluation, content-based 
+
+summarization tasks 
+
+and ROUGE 
+
+in various 
+
+studying 
+
+evaluation measures, divergences. 
+
+
