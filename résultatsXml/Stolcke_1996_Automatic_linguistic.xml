@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article>
+	<preamble>Stolcke_1996_Automatic_linguistic.txt</preamble>
+	<titre>AUTOMATIC LINGUISTIC SEGMENTATION OF CONVERSATIONAL SPEECH </titre>
+	<auteurs>
+		<nom>Andreas Stolcke</nom>
+		<nom>Elizabeth Shriberg</nom>
+	</auteurs>
+	<emails>
+		<mail>stolcke@speech.sri.com</mail>
+		<mail>ees@speech.sri.com</mail>
+	</emails>
+	<abstract>
+
+As speech recognition moves toward more unconstrained domains 
+such as conversational speech, we encounter a need to be able to 
+segment (or resegment) waveforms and recognizer output into lin
+guistically meaningful units, such a sentences. Toward this end, 
+we present a simple automatic segmenter of transcripts based on 
+N-gram language modeling. We also study the relevance of sev
+eral word-level features for segmentation performance. Using only 
+word-level information, we achieve 85% recall and 70% precision 
+on linguistic boundary detection. 
+
+1. 
+
+</abstract>
+</article>
