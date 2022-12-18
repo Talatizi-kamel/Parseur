@@ -36,4 +36,4 @@ Pour compiler et tester :
 
 - g++ -std=c++11 main.cpp -o main
 - ./main pour les résultats txt
-- ./main -t pour les résultats xml
+- ./main -x pour les résultats xml
