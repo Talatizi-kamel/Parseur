@@ -1,0 +1,175 @@
+nom de fichier :Cabrera_RESUMES_2019.pdf convertis a txt
+titre :Contents lists available at ScienceDirect  Expert  Systems  With  Applications  Ranking  résumés  automatically  using  only  résumés:  A  method  free  of  job  offers  
+Les auteurs : 
+Luis Adrián Cabrera-Diego
+Barthélémy Durette
+Human Resources Managers
+L.A. Cabrera-Diego
+M. El-Béze
+M. Torres-Moreno
+Expert Systems With
+Di Sciascio
+Senthil Kumaran
+In Zaroor
+Relevance Feedback
+In Fig
+Supplier France
+Term Scores
+Leurs adresses : 
+diegol@edgehill.ac.uk
+juan-manuel.torres@univ-avignon.fr
+durette@adoc-tm.com
+Abstract : 
+Introduction : 
+Corps : 
+Conclusion : 
+
+The  massive  access  of  the  Internet  has  changed  multiple  as-  
+pects of our lives, and the way we ﬁnd and apply for a job offer  
+is  not  an  exception.  Although  the  use  of  computers  and  the  In-  
+ternet has made easier to ﬁnd job offers and potential candidates  
+to send their résumés or curricula vitae, it has negatively affected  
+the performance of human resource managers during the selection  
+process. Human resource managers have trouble to ﬁnd rapidly the  
+candidates, among all who applied, that meet the job requirements  
+and should be called for an interview.  
+
+We presented two innovative methods for ranking résumés by  
+relevance, making it easier for human resource managers to iden-  
+tify candidates with the desired characteristics. The methods here  
+presented are innovative because they make use only of the ré-  
+sumés  sent  in  response  to  a  job  offer.  These  methods  contrast  
+with state-of-the-art methods that usually compare résumés and  
+job offers with proximity measures. Our methods are language in-  
+dependent and do not need semantic resources to work. Moreover,  
+the methods presented here are statistically better than a random  
+baseline or a baseline grounded on the similarity between résumés  
+and a job offer.  
+
+Moreover, we presented two different ways to apply Relevance  
+Feedback in a résumé ranker. One method for applying Relevance  
+Feedback  works  at  a  general  level  (Relevance  Factor),  while  the  
+other method works at a ﬁner lexical one (Vocabulary Scoring). Al-  
+though the Relevance Factor helps to improve résumé rankings, we  
+ﬁnd that it is its use along with Vocabulary Scoring that helps us  
+to reach a Mean Average Precision of 0.937. Put differently, by us-  
+ing the Relevance Factor with Vocabulary Scoring we can correctly  
+rank almost every résumé. As a consequence, we can reduce the  
+time needed by human resource managers to ﬁnd the résumés of  
+relevant applicants. It is important to note that the very good re-  
+sults obtained with Vocabulary Scoring reinforces the concept that  
+relevant résumés share more characteristics with themselves than  
+with irrelevant ones, as seen in our previous works.  
+
+We believe that, within the résumés we can intrinsically ﬁnd a  
+“facial composite” of the ideal candidate, and possibly the “facial  
+composite” that represents the unqualiﬁed candidates. It may be  
+these “facial composites” that enable us to rank résumés without  
+the use of a job offer or semantic resources.  
+
+We  consider  that  methodologies  based  only  on  résumés  and  
+their vocabularies are the future of résumé rankers. The main rea-  
+son  to  think  this  is  that  they  are  capable  of  offering  excellent  
+performance  without  being  limited  to  one  domain  or  language.  
+Despite  these  methods  were  created  to  be  used  in  a  particular  
+database, where it was impossible to have access to every job of-  
+fer, we believe that it can be used in any database of résumés, only  
+if these are separated by job postings. Furthermore, the methods  
+here presented do not make use of any kind of semantic resources,  
+which can make them easier to implement in under-resources lan-  
+guages.  
+
+There  are  still  things  that  must  be  studied  with  this  kind  of  
+methods. In the ﬁrst place are the temporal aspects. We assumed  
+in this article that all the résumés were present at the same time,  
+but  in  real  life  this  may  not  be  true.  On  occasions,  the  process  
+of recruitment and selection are done in parallel, i.e., once a ré-  
+sumé arrives to a human resource manager, it is analyzed. We have  
+
+to consider as well the evolution of the person speciﬁcation over  
+time. In some cases, human resource managers are obliged to be-  
+come  more  or  less  strict  in  order  to  ﬁlter  the  applicants.  These  
+changes, in consequence, will affect the human resource managers’  
+perception regarding the relevance of applicants. Due to this effect,  
+the way to apply our methods may need to change, and we should  
+evaluate until which extent they remain valid. However, despite all,  
+the proposed methods could be used to evaluate a posteriori the  
+reasons why a group of candidates was chosen to do an interview.  
+Moreover,  other  human  resource managers or  psychologists  may  
+ﬁnd useful the tool to determine whether human resource man-  
+agers were affected by personality inferences, misspellings or any  
+kind of discrimination.  
+
+Another aspect to take into account is the way to match terms  
+or concepts and n -grams. These representations are not the same,  
+and this can infuse diﬃculty to some degree in the application of  
+our methods. Put differently, a concept may be diﬃcult to repre-  
+sent with an n -gram. Finally, it should be analyzed the economics  
+and whether human resource managers will adopt these methods  
+to make their tasks easier.  
+
+Regarding the scalability of the methods here presented, we do  
+not observe any particular problem. As we indicated in Section 5 ,  
+the methods were called using the program GNU Parallel , meaning  
+that  each  job  posting  was  analyzed  using  different  CPU  threads.  
+This indicates that multiple job postings can be processed at the  
+same time without any collision. Furthermore, it is possible to par-  
+allelize the similarity between résumés, i.e., to use several threads  
+to calculate multiple Dice’s Coeﬃcient scores at the same time. The  
+only aspect to take into consideration is that the vectors represent-  
+ing the résumés should be accessible to every thread. At the end,  
+all the methods described in this work can be easily scaled and  
+distributed in a cluster.  
+
+In the future, we would like to use word embedding in order  
+to  calculate  the  proximity  between  résumés  differently.  It  could  
+also be useful for Vocabulary Scorings. In addition, we will work  
+on the improvements described in the discussion. Since the meth-  
+ods developed here are language independent, it will be easy to  
+test them on other languages than French. Although this last task  
+can be diﬃcult to achieve due to the lack of a corpus of real se-  
+lection  processes.  During  the  experimentation,  we  observed  that  
+our methods can keep a good performance when they are tested  
+25 Therefore, we  
+on an encrypted version of the data set here used.  
+can rely on this clue that for other languages, the methods should  
+work as well.  
+
+In conclusion, we hope that our methods and results will attract  
+
+new and deeper research in this domain.  
+
+Credit authorship contribution statement  
+
+Luis Adrián  Cabrera-Diego:  Conceptualization,  Methodology,  
+Software, Validation, Formal analysis, Investigation, Data curation,  
+Writing  -  original  draft,  Writing  -  review  &  editing,  Visualiza-  
+tion.  Marc  El-Béze:  Conceptualization,  Methodology,  Validation,  
+Formal analysis, Investigation, Writing - review & editing, Super-  
+vision,  Project  administration,  Funding  acquisition.  Juan-Manuel  
+Torres-Moreno: Conceptualization, Methodology, Writing - review  
+&  editing,  Supervision,  Project  administration,  Funding  acquisi-  
+tion. Barthélémy Durette: Conceptualization, Methodology, Formal  
+analysis, Writing - review & editing, Supervision, Project adminis-  
+tration.  
+
+25 We did not achieve the same results in the encrypted data set, as the résumés  
+were encrypted without doing a deep pre-processing, like lemmatization or stop  
+words deletion. Thus, the résumés contained a greater variety of terms and noisy  
+words.  
+
+106  
+
+L.A. Cabrera-Diego, M. El-Béze and J.-M. Torres-Moreno et al. / Expert Systems With Applications 123 (2019) 91–107  
+
+Acknowledgments  
+
+This  work  was  partially  funded  by  the  Agence  National  de  la  
+Recherche  et  de  la  Technologie  ( ANRT ),  France,  through  the  CIFRE  
+convention 2012/0293b and by the Consejo Nacional de Ciencia y  
+Tecnología ( CONACyT ), Mexico, with the grant 327165 .  
+
+
+Discussion : 
+Biblio : 
+Ref :Armstrong, M. , & Taylor, S. (2014). Armstrong’s handbook of human resource manage-  ment practice (13th). Kogan Page Publishers .  Arthur, D. (2001). The employee recruitment and retention handbook . AMACOM .  Barber, L. (2006). E-Recruitment developments . Institute for Employment Studies .  Buckley, C., & Voorhees, E. M. (20 0 0). Evaluating evaluation measure stability. In  Proceedings of the 23rd annual international ACM SIGIR conference on research and  development in information retrieval (pp. 33–40). Athens, Greece: ACM. doi: 10.  1145/345508.345543 .  Cabrera-Diego, L. A. (2015). Automatic methods for assisted recruitment . Université d’Avignon et des Pays de Vaucluse Ph.D. thesis .  Cabrera-Diego,  L.  A. ,  Durette,  B. ,  Lafon,  M. ,  Torres-Moreno,  J.-M. ,  &  El-Bèze,  M.  (2015).  How  can  we  measure  the  similarity  between  résumés  of selected candidates for a job?. In Stahlbock, Robert, & Weiss, Gary M. (Eds.),  Proceedings  of  the  11th  international  conference  on  data  mining  (DMIN’15)  (pp. 99–106) . Las Vegas, USA  Chapman, D. S., & Webster, J. (2003). The use of technologies in the recruiting,  screening, and selection processes for job candidates. International Journal of Se-  lection and Assessment, 11 (2–3), 113–120. doi: 10.1111/1468-2389.00234 .  Cohen, J. (1988). Statistical power analysis for the behavioral sciences (2nd). Hillsdale,  USA: Lawrence Earlbaum Associates .  Cole,  M.  S.,  Feild,  H.  S.,  Giles,  W.  F.,  &  Harris,  S.  G.  (2009).  Recruiters’  infer-  ences of applicant personality based on résumé screening: Do paper people  have a personality? Journal of Business and Psychology, 24 (1), 5–18. doi: 10.1007/  s10869- 008- 9086- 9 .  Cossu, J.-V. (2015). Analyse de l’image de marque sur le Web 2.0 . Avignon, France:  Université d’Avignon et des Pays de Vaucluse Ph.D. thesis .  Cossu, J.-V. , Janod, K. , Ferreira, E. , Gaillard, J. , & El-Bèze, M. (2014). LIA@RepLab  2014: 10 methods for 3 tasks. In L. Cappellato, N. Ferro, M. Halvey, & W. Kraaij  (Eds.),  Working  notes  for  4th  International  Conference  of  the  CLEF  initiative  (pp. 1458–1467) . Sheﬃeld, UK  Elkington, T. (2005). Bright future for online recruitment. Personnel Today , 9 .  Faliagka,  E.,  Iliadis,  L.,  Karydis,  I.,  Rigou,  M.,  Sioutas,  S.,  Tsakalidis,  A.,  &  Tz-  imas,  G.  (2013).  On-line  consistent  ranking  on  e-recruitment:  Seeking  the  truth behind a well-formed CV. Artiﬁcial Intelligence Review , 1–14. doi: 10.1007/  s10462- 013- 9414- y .  Faliagka, E., Kozanidis, L., Stamou, S., Tsakalidis, A., & Tzimas, G. (2011). A person-  ality mining system for automated applicant ranking in online recruitment sys-  tems. In S. Auer, O. Díaz, & G. A. Papadopoulos (Eds.), Proceedings of the 11th  international conference web engineering (ICWE 2011) . In Lecture Notes in Com-  puter Science: 6757 (pp. 379–382). Paphos, Cyprus: Springer Berlin Heidelberg.  doi: 10.1007/978- 3- 642- 22233- 7 _ 30 .  Fang, X., & Zhan, J. (2015). Sentiment analysis using product review data. Journal of  Big Data, 2 (1), 5. doi: 10.1186/s40537-015-0015-2 .  García-Sánchez,  F.,  Martínez-Béjar,  R.,  Contreras,  L.,  Fernández-Breis,  J.  T.,  &  Castellanos-Nieves, D. (2006). An ontology-based intelligent system for recruit-  ment. Expert Systems with Applications, 31 (2), 248–263. doi: 10.1016/j.eswa.2005.  09.023 .  Guo, S., Alamudun, F., & Hammond, T. (2016). RésuMatcher: A personalized résumé-  job matching system. Expert Systems with Applications, 60 (Supplement C), 169– 182. doi: 10.1016/j.eswa.2016.04.013 .  Harzallah, M., Leclère, M., & Trichet, F. (2002). CommOnCV: Modelling the compe-  tencies underlying a curriculum vitae. In Proceedings of the 14th international  conference on software engineering and knowledge engineering (SEKE’02) (pp. 65– 71). Ischia Island, Italy: ACM. doi: 10.1145/56 8760.56 8773 .  Hutterer, M. (2011). Enhancing a job recommender with implicit user feedback . Vienna,  Austria:  Fakultät  für  Informatik  der  Technischen  Universität  Wien  Master’s  thesis .  Järvelin, K., & Kekäläinen, J. (20 0 0). IR evaluation methods for retrieving highly rel-  evant documents. In Proceedings of the 23rd annual international ACM SIGIR con-  ference on research and development in information retrieval (pp. 41–48). Athens,  Greece: ACM. doi: 10.1145/345508.345545 .  Kessler, R., Béchet, N., Roche, M., El-Bèze, M., & Torres-Moreno, J. M. (2008a). Au-  tomatic proﬁling system for ranking candidates answers in human resources.  In R. Meersman, Z. Tari, & P. Herrero (Eds.), On the move to meaningful inter-  net systems: OTM 2008 Workshops . In Lecture Notes in Computer Science: 5333  (pp.  625–634).  Monterrey,  Mexico:  Springer  Berlin  Heidelberg.  doi: 10.1007/  978- 3- 540- 88875- 8 _ 86 .  Kessler, R., Béchet, N., Roche, M., Torres-Moreno, J.-M., & El-Bèze, M. (2012). A hy-  brid approach to managing job offers and candidates. Information Processing &  Management, 48 (6), 1124–1135. doi: 10.1016/j.ipm.2012.03.002 .  Kessler, R., Béchet, N., Torres-Moreno, J.-M., Roche, M., & El-Bèze, M. (2009). Job  offer management: How improve the ranking of candidates. In Foundations of  intelligent systems: Proceedings of 18th international symposium on methodologies  for intelligent systems (ISMIS 2009) . In Lecture Notes in Computer Science: 5722  (pp. 431–441). Prague, Czech Republic: Springer Berlin Heidelberg. doi: 10.1007/  978- 3- 642- 04125- 9 _ 46 .  Kessler, R. , Torres-Moreno, J. M. , & El-Bèze, M. (2008b). E-Gen: Proﬁlage automa-  tique de candidatures. In Actes de la 15ème conférence sur le Traitement Automa-  tique des Langues Naturelles (TALN 2008) (pp. 370–379) . Avignon, France  Kmail, A. B., Maree, M., & Belkhatir, M. (2015). MatchingSem: Online recruitment  system based on multiple semantic resources. In 12th international conference  on fuzzy systems and knowledge discovery (FSKD 2015) (pp. 2654–2659). doi: 10.  1109/FSKD.2015.7382376 .  Looser, D. , Ma, H. , & Schewe, K.-D. (2013). Using formal concept analysis for ontol-  ogy maintenance in human resource recruitment. In F. Ferrarotti, & G. Gross-  mann (Eds.), Proceedings of the ninth Asia-Paciﬁc conference on conceptual mod-  elling: 143 (pp. 61–68). Adelaide, Australia: Australian Computer Society, Inc .  Martin-Lacroux, C. (2017). “Without the spelling errors I would have shortlisted  her...”:The impact of spelling errors on recruiters’ choice during the personnel  selection process. International Journal of Selection and Assessment, 25 (3), 276– 283. doi: 10.1111/ijsa.12179 .  Martinez-Gil, J., Paoletti, A. L., Rácz, G., Sali, A., & Schewe, K.-D. (2018). Accurate and  eﬃcient proﬁle matching in knowledge bases. Data & Knowledge Engineering,  117 , 195–215. doi: 10.1016/j.datak.2018.07.010 .  Martinez-Gil, J., Paoletti, A. L., & Schewe, K.-D. (2016). A smart approach for match-  ing, learning and querying information from the human resources domain. In  M. Ivanovi ´c, B. Thalheim, B. Catania, K.-D. Schewe, M. Kirikova, P. Šaloun, A. Da-  hanayake, T. Cerquitelli, E. Baralis, & P. Michiardi (Eds.), Proceedings of the new  trends in databases and information systems: ADBIS 2016 short papers and work-  shops, BigDap, DCSA, DC (pp. 157–167). Prague, Czech Republic: Springer Inter-  national Publishing. doi: 10.1007/978- 3- 319- 44066-8 _ 17 .  Mason, R. L., Gunst, R. F., & Hess, J. L. (2003). Statistical design and analysis of exper-  iments: With applications to engineering and science. Wiley Series in Probability  and Statistics (2nd). Wiley-Interscience. doi: 10.1002/0471458503 .  Menon, V. M., & Rahulnath, H. A. (2016). A novel approach to evaluate and rank can-  didates in a recruitment process by estimating emotional intelligence through  social media data. In International conference on next generation intelligent sys-  tems (ICNGIS) (pp. 1–6). Kottayam, India: IEEE. doi: 10.1109/ICNGIS.2016.7854061 .  Montuschi, P., Gatteschi, V., Lamberti, F., Sanna, A., & Demartini, C. (2014). Job re-  cruitment and job seeking processes: How technology can help. IT Professional,  16 (5), 41–49. doi: 10.1109/MITP.2013.62 .  Padró, L. , & Stanilovsky, E. (2012). FreeLing 3. 0: Towards wider multilinguality.  In N. Calzolari, K. Choukri, T. Declerck, M. U. Do ˘gan, B. Maegaard, J. Mariani,  A. Moreno, J. Odijk, & S. Piperidis (Eds.), Proceedings of the eight international  conference on language resources and evaluation (LREC’12) (pp. 2473–2479). Is-  tanbul, Turkey: ELRA .  R Core Team (2018). R: A language and environment for statistical computing. R  Foundation for Statistical Computing Vienna, Austria.  Radevski, V., & Trichet, F. (2006). Ontology-based systems dedicated to human re-  sources management: An application in e-Recruitment. In R. Meersman, Z. Tari,  & P. Herrero (Eds.), On the move to meaningful internet systems 2006: OTM  2006 Workshops . In Lecture Notes in Computer Science: 4278 (pp. 1068–1077).  Montpellier, France: Springer Berlin Heidelberg. doi: 10.1007/11915072 _ 9 .  Rocchio, J. J. (1971). Relevance feedback in information retrieval. In G. Salton (Ed.),  The SMART retrieval system: Experiments in automatic document processing . In Au-  tomatic Computation (pp. 313–323). Englewood Cliffs, N.J., USA: Prentice-Hall .  Salton, G., Wong, A., & Yang, C.-S. (1975). A vector space model for automatic index-  ing. Communications of the ACM, 18 (11), 613–620. doi: 10.1145/361219.361220 .  Sen, A ., Das, A ., Ghosh, K., & Ghosh, S. (2012). Screener: A system for extracting ed-  ucation related information from resumes using text based information extrac-  tion system. In Proceedings of 2012 international on computer and software model-  ing (ICCSM 2012) . In International proceedings of computer science & information  technology: 54 (pp. 31–35). International Association of Computer Science and  Information Technology Press (IACSIT Press). doi: 10.7763/IPCSIT.2012.V54.06 .  Senthil Kumaran, V., & Sankar, A. (2012). Expert locator using concept linking. Inter-  national Journal of Computational Systems Engineering, 1 (1), 42–49. doi: 10.1504/  IJCSYSE.2012.044742 .  Senthil Kumaran, V., & Sankar, A. (2013). Towards an automated system for in-  telligent screening of candidates for recruitment using ontology mapping (EX-  PERT). International Journal of Metadata, Semantics and Ontologies, 8 (1), 56–64.  doi: 10.1504/IJMSO.2013.054184 .  Singh, A., Rose, C., Visweswariah, K., Chenthamarakshan, V., & Kambhatla, N. (2010).  PROSPECT: A system for screening candidates for recruitment. In Proceedings  of the 19th ACM international conference on information and knowledge manage-  ment (CIKM 2010) (pp. 659–668). Toronto, Canada: ACM. doi: 10.1145/1871437.  1871523 .  Spärck-Jones, K. (1972). A statistical interpretation of term speciﬁcity and its appli-  cation in retrieval. Journal of Documentation, 28 (1), 11–21. doi: 10.1108/eb026526 .  Tange, O. (2011). GNU parallel - The command-line power tool. login: The USENIX  Magazine, 36 (1), 42–47 .  Thompson, M. A. (20 0 0). The global resume and CV guide . Chichester, New York: Wi-  ley .  Tinelli, E., Colucci, S., Donini, F. M., Di Sciascio, E., & Giannini, S. (2017). Embedding  semantics in human resources management automation via SQL. Applied Intelli-  gence, 46 (4), 952–982. doi: 10.1007/s10489- 016- 0868- x .  Torres-Moreno, J.-M., El-Bèze, M., Bellot, P., & Béchet, F. (2012). Opinion detection as  a topic classiﬁcation problem. In É. Gaussier, & F. Yvon (Eds.), Textual information  access: Statistical models (pp. 337–368). Wiley-ISTE. doi: 10.1002/9781118562796.  ch9 .  L.A. Cabrera-Diego, M. El-Béze and J.-M. Torres-Moreno et al. / Expert Systems With Applications 123 (2019) 91–107  107  Trichet, F., Bourse, M., Leclère, M., & Morin, E. (2004). Human resource management  and semantic web technologies. In Proceedings of information and communica-  tion technologies: From theory to applications (ICTTA’04) (pp. 641–642). Damas-  cus, Syria: IEEE. doi: 10.1109/ICTTA.2004.1307928 .  Voorhees, E. M. , & Harman, D. (2001). Overview of TREC 2001. In Proceedings of the  10th Text REtrieval Conference (TREC 2001) (pp. 1–15). Gaithersburg, Maryland,  USA: National Institute of Standards and Technology (NIST) .  Zaroor,  A.,  Maree,  M.,  &  Sabha,  M.  (2017).  A  hybrid  approach  to  conceptual  classiﬁcation and ranking of resumes and their corresponding job posts. In  I. Czarnowski, R. J. Howlett, & L. C. Jain (Eds.), Intelligent decision technologies  2017: Proceedings of the 9th KES international conference on intelligent decision  technologies (KES-IDT 2017) - part I (pp. 107–119). Vilamoura, Portugal: Springer  International Publishing. doi: 10.1007/978- 3- 319- 59421- 7 _ 10 .   
